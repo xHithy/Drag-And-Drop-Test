@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Module A - Phase 1</title>
+</head>
+<body>
+    <div class="page-container flex ai-c col">
+        <section class="upload-container flex col jc-c ai-c max-w">
+            <input class="pointer" type="file" onchange="readUploadedFile(event)">
+            <div class="drop-container pointer">
+                <span class="hashtag">+</span> Drop or Select file
+            </div>
+            <span class="selected-file flex w-full">
+                No file selected
+            </span>
+        </section>
+
+        <section class="sorting-container bg-white max-w">
+            <div class="sorting-actions flex ai-c s-b">
+                <h1><span class="hashtag">#</span> VIP Grid</h1>
+                <div class="sorting-actions__buttons flex gap-1">
+                    <button class="sample-button" onclick="loadSampleData()">Sample data</button>
+                    <button class="fullscreen-button" onclick="openFullscreen()">Full-screen</button>
+                </div>
+            </div>
+            <div class="sorting-grid flex col jc-c gap-1" id="vip-grid">
+                <div class="seat-row row-1 flex gap-1 s-a"></div>
+                <div class="seat-row row-2 flex gap-1 s-a"></div>
+                <div class="seat-row row-3 flex gap-1 s-a"></div>
+                <div class="seat-row row-4 flex gap-1 s-a"></div>
+            </div>
+        </section>
+
+        <div class="section-divider max-w">
+            <hr>
+        </div>
+
+        <section class="export-container max-w">
+            <div class="export-actions flex ai-c s-b">
+                <h1><span class="hashtag">#</span> Raw list</h1>
+                <div class="export-actions__buttons flex gap-1">
+                    <button onclick="copyToClipboard()">Copy to clipboard</button>
+                    <button onclick="downloadTxt(document.getElementById('raw-data').value)">Download</button>
+                </div>
+            </div>
+            <textarea class="raw-data flex" id="raw-data" readonly></textarea>
+        </section>
+    </div>
+    <script src="assets/js/script.js" defer></script>
+</body>
+</html>

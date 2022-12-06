@@ -1,0 +1,28 @@
+.bg-white { background-color:white }
+.bg-gray { background-color:#f2f4f7 }
+
+.flex { display:flex }
+.wrap { flex-wrap:wrap }
+.nowrap {flex-wrap:nowrap }
+.col { flex-direction:column }
+.row { flex-direction:row }
+.br-5 { border-radius:5px }
+.br-10 { border-radius:10px }
+
+.jc-c { justify-content:center }
+.jc-r { justify-content:right }
+.jc-fe { justify-content:flex-end }
+.ai-c { align-items:center }
+.ai-fe { align-items:flex-end }
+.ai-fs { align-items:flex-start }
+.ai-r { align-items:right }
+
+.s-a { justify-content:space-around }
+.s-b { justify-content:space-between }
+.s-e { justify-content:space-evenly }
+
+.pointer { cursor:pointer }
+
+.gap-1 { gap:1rem }
+
+.w-full { width:100% }
